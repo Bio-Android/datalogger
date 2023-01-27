@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textVtitulo"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Hospital: Siglo XXI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVtitulo" />
+
+    <TextView
+        android:id="@+id/textVhum"
+        android:layout_width="158dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Humedad
+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineChart" />
+
+    <TextView
+        android:id="@+id/textVtemp"
+        android:layout_width="158dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Temperatura: "
+        app:layout_constraintEnd_toStartOf="@+id/textVhum"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineChart" />
+
+    <TextView
+        android:id="@+id/textVarea"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="Area: Hemodinamia"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineChart" />
+
+    <TextView
+        android:id="@+id/textVubicacion"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="Ubicacion: Sala 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVarea" />
+
+    <TextView
+        android:id="@+id/textVid"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="148dp"
+        android:gravity="center"
+        android:text="Id del dispositivo: 092342H5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVubicacion"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

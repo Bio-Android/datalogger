@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.datalogger.fragment_main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_fragment_main_to_graphics_Data2"
+            app:destination="@id/graphics_Data" />
+    </fragment>
+    <fragment
+        android:id="@+id/graphics_Data"
+        android:name="com.example.datalogger.Graphics_Data"
+        android:label="fragment_graphics__data"
+        tools:layout="@layout/fragment_graphics__data" />
+
+</navigation>
